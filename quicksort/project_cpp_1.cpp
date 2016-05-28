@@ -6,49 +6,48 @@
 
 using namespace std;
 
-int main()
-{
-		
-	srand(unsigned(time(NULL)));
+int main() {
 
-	int const size=10;
+    srand(unsigned(time(NULL)));
 
-    int a_int[size]; 
-	for (int i=0;i<size;i++)
-		a_int[i]=rand()%10;
+    int const size = 10;
 
-	printf("Do \n");
-	print(a_int, size);
-	quick_sort(a_int,size);//
-	printf("Posle \n");
-	print(a_int,size);
+    int a_int[size];
+    for (int i = 0; i < size; i++)
+        a_int[i] = rand() % 10;
 
-	double a_double[size];
-	for(int i=0;i<size;i++)
-		a_double[i]=(double)rand()/RAND_MAX*7+1;
+    printf("Do \n");
+    print(a_int, size);
+    quick_sort(a_int, size);//
+    printf("Posle \n");
+    print(a_int, size);
 
-	printf("Do \n");
-	print(a_double, size);
-	quick_sort(a_double, size);
-	printf("Posle \n");
-	print(a_double, size);
+    double a_double[size];
+    for (int i = 0; i < size; i++)
+        a_double[i] = (double) rand() / RAND_MAX * 7 + 1;
 
-	char* a_char=rand_char_array(size);
+    printf("Do \n");
+    print(a_double, size);
+    quick_sort(a_double, size);
+    printf("Posle \n");
+    print(a_double, size);
 
-	printf("Do \n");
-	print(a_char, size);
-	quick_sort(a_char, size);
-	printf("Posle \n");
-	print(a_char, size);
+    char *a_char = rand_char_array(size);
 
-	char** a_string=rand_string_array(size);
+    printf("Do \n");
+    print(a_char, size);
+    quick_sort(a_char, size);
+    printf("Posle \n");
+    print(a_char, size);
 
-	printf("Do \n");
-	print(a_string, size);
-	quick_sort(a_string, size);
-	printf("Posle \n");
-	print(a_string, size);
+    char **a_string = rand_string_array(size);
 
-	_getch();
-	return 0;
+    printf("Do \n");
+    print(a_string, size);
+    quick_sort(a_string, size);
+    printf("Posle \n");
+    print(a_string, size);
+
+    _getch();
+    return 0;
 }
