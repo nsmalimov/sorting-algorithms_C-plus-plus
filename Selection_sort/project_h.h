@@ -47,3 +47,5 @@ void print(T **p, int size) {
         cout << p[i] << "\n";
     cout << "\n\n";
 }
+
+=

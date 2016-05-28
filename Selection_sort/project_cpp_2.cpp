@@ -24,7 +24,3 @@ char **rand_string_array(int size) {
 
     return string_array;
 }
-
-
-
-
